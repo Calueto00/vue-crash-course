@@ -10,5 +10,5 @@
   <NavBar />
   <Hero title="Become a son of bitch" subtitle="Find the Vue job that fits your skills and needs"/>
   <Homecards />
-  <JobListing :limit="3"/>
+  <JobListing :limit="3" :showButton="true"/>
 </template>
