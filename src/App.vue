@@ -1,14 +1,10 @@
 <script setup>
-  import {ref} from 'vue';
-  import NavBar from './components/NavBar.vue';
-  import Hero from '@/components/Hero.vue';
-  import Homecards from './components/Homecards.vue';
-  import JobListing from './components/JobListing.vue';
+  import Navbar from '@/components/Navbar.vue';
+  import { RouterView } from 'vue-router';
+  
 </script>
 
 <template>
-  <NavBar />
-  <Hero title="Become a son of bitch" subtitle="Find the Vue job that fits your skills and needs"/>
-  <Homecards />
-  <JobListing :limit="3" :showButton="true"/>
+  <Navbar />
+  <RouterView />
 </template>

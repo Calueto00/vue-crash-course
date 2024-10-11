@@ -1,9 +1,25 @@
 <script setup>
-    import { defineProps } from 'vue';
+    import { computed, defineProps } from 'vue';
 
-    defineProps({
-        job: Object
+    // desta form podes usar o dados job que veio apartir de um componente pai, manejar no componente filho
+ const props = defineProps({
+        job: Object,
     });
+
+    //const showFullDescription = ref(false);
+
+    // apartir da variavel props podemos usar os dados do object job do componente pai e acessar as suas propriedades no componente filho
+   /* const truncatedDescription = computed(() => {
+      let description = props.job.description;
+      
+        if(!showFullDescription.value){
+
+          //a função substring permite limmitar a exibição de texto apartir de um numero pré-determinado
+          description = description.substring(0, 90);
+        }
+        return description;
+    }); */
+    
 </script>
 
 <template>

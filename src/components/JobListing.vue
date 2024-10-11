@@ -4,7 +4,7 @@
     import JobSingle from './JobSingle.vue';
 
     const jobs = ref(JobData);
-    console.log(jobs.value);
+  //  console.log(jobs.value);
         
     defineProps({
         limit: Number,
